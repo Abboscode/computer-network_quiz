@@ -1307,6 +1307,126 @@ const questions = [{
       "d) to+890ms"
     ],
     "answer": "b) to+1370ms"
+  }, {
+    "question": "A DHCP server deployed in a local area network provides:",
+    "options": [
+      "a) an electronic mail service within the local area network, hence being able to forward email messages sent by clients within the network",
+      "b) a name resolution service to hosts connected to the local area network",
+      "c) an IP configuration to any IP host within the Internet which explicitly requests one",
+      "d) an IP configuration to hosts connected to the local area network"
+    ],
+    "answer": "d) an IP configuration to hosts connected to the local area network",
+    "explanation": "A DHCP server provides dynamic IP configuration to hosts within the local area network."
+  },
+  {
+    "question": "What transport protocol exchanges datagrams without acknowledgments or guaranteed delivery?",
+    "options": [
+      "a) UDP",
+      "b) SMTP",
+      "c) SIP",
+      "d) TCP"
+    ],
+    "answer": "a) UDP",
+    "explanation": "UDP (User Datagram Protocol) sends datagrams without guarantees of delivery or acknowledgment."
+  },
+  {
+    "question": "Within Link State routing algorithms, the routing table of a node:",
+    "options": [
+      "a) is derived from a Distance Vector algorithm",
+      "b) lists all known paths to all other nodes",
+      "c) is written once the minimum cost path to all other nodes is known",
+      "d) is used to compute the minimum cost path to all other nodes"
+    ],
+    "answer": "b) lists all known paths to all other nodes",
+    "explanation": "Link State routing algorithms maintain a complete routing table with known paths to all nodes."
+  },
+  {
+    "question": "Which mechanism does a router with Network Address Translation exploit to associate internal network addresses and external ones?",
+    "options": [
+      "a) The RTP protocol is exploited",
+      "b) The internal and external IP addresses are used directly, without performing any specific action on them",
+      "c) The congestion protocol is used for the association",
+      "d) A combination of IP addresses and TCP/UDP ports"
+    ],
+    "answer": "d) A combination of IP addresses and TCP/UDP ports",
+    "explanation": "NAT uses a combination of IP addresses and port numbers to map internal and external addresses."
+  },
+  {
+    "question": "In a WiFi IEEE 802.11b network, a terminal A starts transmitting a frame during the transmission from terminal B to the same Access Point, which of the following behaviors will happen?",
+    "options": [
+      "a) Both terminals detect the collision and interrupt their own transmission",
+      "b) Terminal B ends its transmission and waits for the reception of an ACK from the Access Point",
+      "c) Terminal A detects the collision and interrupts its own transmission",
+      "d) Terminal B ends its transmission and receives a NACK from the Access Point"
+    ],
+    "answer": "a) Both terminals detect the collision and interrupt their own transmission",
+    "explanation": "In IEEE 802.11b, both terminals will detect a collision and interrupt transmission."
+  },
+  {
+    "question": "A 16-QAM digital modulation:",
+    "options": [
+      "a) provides for the transmission of 16 bits for each symbol time",
+      "b) provides for the transmission of 16 symbols for each bit time",
+      "c) provides for the transmission of 4 symbols for each bit time",
+      "d) provides for the transmission of 4 bits in each symbol time"
+    ],
+    "answer": "d) provides for the transmission of 4 bits in each symbol time",
+    "explanation": "In 16-QAM, each symbol represents 4 bits."
+  },
+  {
+    "question": "In a window protocol, a transmitter that receives duplicate ACKs (ACKs containing the same sequence number) may safely assume:",
+    "options": [
+      "a) the timeout duration has been increased",
+      "b) one or more packets previously sent by the transmitter have been lost",
+      "c) the round trip time between transmitter and receiver has diminished",
+      "d) one or more ACKs previously sent by the receiver have been lost"
+    ],
+    "answer": "b) one or more packets previously sent by the transmitter have been lost",
+    "explanation": "Duplicate ACKs indicate that a packet has likely been lost, prompting retransmission."
+  },
+  {
+    "question": "When a node using sliding window protocol and receives an out-of-sequence PDU with errors in the parity bits:",
+    "options": [
+      "a) it stores the PDU in its memory if it is included in the receiver window, without sending any ACK",
+      "b) it sends an ACK relative to the sequence number of the PDU but it discards the PDU",
+      "c) it discards the PDU and it does not send any ACK",
+      "d) it discards the PDU and it sends an ACK with the expected sequence number"
+    ],
+    "answer": "d) it discards the PDU and it sends an ACK with the expected sequence number",
+    "explanation": "In sliding window protocol, the receiver discards out-of-sequence PDUs and sends an ACK for the expected sequence number."
+  },
+  {
+    "question": "In Wi-Fi networks, what is meant by the term 'hidden terminal'?",
+    "options": [
+      "a) A wireless access point obstructed by physical barriers",
+      "b) A wireless device unable to detect transmissions from other nearby devices",
+      "c) A router with limited signal coverage",
+      "d) A wireless device unable to communicate with other devices due to physical obstacles, or distance"
+    ],
+    "answer": "b) A wireless device unable to detect transmissions from other nearby devices",
+    "explanation": "A hidden terminal refers to a device that cannot detect the transmissions of other devices in the same network."
+  },
+  {
+    "question": "During the conversion from analog to digital signals:",
+    "options": [
+      "a) The analog signal is sampled using an amount of levels that depend on the amount of bits per sample",
+      "b) The analog signal is sampled only if the number of samples to be extracted equals the number of bits per sample",
+      "c) The analog signal is quantized only if the amount of bits per sample is insufficient",
+      "d) The analog signal is quantized using an amount of levels that depend on the amount of bits per sample"
+    ],
+    "answer": "d) The analog signal is quantized using an amount of levels that depend on the amount of bits per sample",
+    "explanation": "Quantization in analog-to-digital conversion is based on the number of bits per sample, which determines the number of quantization levels."
+  },
+  {
+    "question": "The store and forward process:",
+    "options": [
+      "a) Is never implemented in a packet switched network (with or without virtual circuits)",
+      "b) Is implemented only in a packet switched network (with or without virtual circuits)",
+      "c) Is never implemented in a packet switched network with virtual circuits",
+      "d) Is implemented only in a packet switched network with virtual circuits"
+    ],
+    "answer": "b) Is implemented only in a packet switched network (with or without virtual circuits)",
+    "explanation": "Store and forward is a fundamental process in packet-switched networks, including those with virtual circuits."
   }
 
 
