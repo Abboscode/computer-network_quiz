@@ -441,7 +441,108 @@ const questions = [{
               ],
               "answer": "b is the same whether you use a link state algorithm or use a distance vector algorithm.c never changes even if the cost of the channels changes",
               "explanation": "Both link state and distance vector routing algorithms aim to find the optimal path between a source and a destination. While they use different methods to achieve this goal (link state algorithms consider the entire network topology, whereas distance vector algorithms rely on iterative updates between neighboring routers), the result—the optimal path—is independent of the algorithm used. Therefore, the optimal path remains the same regardless of whether you use a link state or distance vector algorithm."
-            }
+            },
+  {
+    "question": "Given a topology (nodes, channels, and associated costs), the optimal path between a source and a destination?",
+    "options": [
+      "a) changes according to the node running the link state algorithm",
+      "b) is the same whether you use a link state algorithm or use a distance vector algorithm",
+      "c) never changes even if the cost of the channels changes",
+      "d) never changes even if a channel becomes unavailable"
+    ],
+    "answer": "a) changes according to the node running the link state algorithm",
+    "explanation": "The optimal path can change based on the algorithm used to find it, with link state algorithms considering the entire network topology and recalculating the path when network changes occur."
+  },
+  {
+    "question": "The term 'roaming' in a cellular network indicates:",
+    "options": [
+      "a) the overlap of multiple cells in a given area of the territory",
+      "b) the speed by which the terminal moves from cell to cell",
+      "c) the persistence of the connection even when the terminal moves into an adjacent cell",
+      "d) the ability to call a terminal regardless of the cell in which it is"
+    ],
+    "answer": "c) the persistence of the connection even when the terminal moves into an adjacent cell",
+    "explanation": "Roaming ensures the persistence of the connection as the terminal moves between cells, allowing continuous communication services without interruption."
+  },
+  {
+    "question": "A host must send a file of 3000 bytes using PDU composed of a 700-byte SDU and a 100-byte PCI over a 1 Mb/s channel. What is the transmission time of the last PDU sent by the host?",
+    "options": [
+      "a) 2.4 ms",
+      "b) 0.3 ms",
+      "c) 6.4 ms",
+      "d) 1.2 ms"
+    ],
+    "answer": "a) 2.4 ms",
+    "explanation": "The size of the last PDU is 300 bytes, and the transmission time is calculated as 300 * 8 / 1000 kbps = 2.4 ms."
+  },
+  {
+    "question": "A transmitter must send 6 PDUs using a Go-Back-N protocol with cumulative ACK semantics and transmission window size equal to 4 PDUs, starting the numeration from 1. The only ACK received is ACK 2, and it is received during the transmission of PDU 3. Knowing that no further ACK will be received, which actions could be executed by the transmitter after sending PDU 3 and before the timeout expiration?",
+    "options": [
+      "a) The transmitter transmits PDUs 4, 5, and 6",
+      "b) The transmitter transmits PDUs 4 and 5",
+      "c) The transmitter starts transmitting from PDU 2 onward",
+      "d) The transmitter takes no action"
+    ],
+    "answer": "b) The transmitter transmits PDUs 4 and 5",
+    "explanation": "With ACK 2 received, the window shifts and the transmitter can send PDUs 4 and 5 before the timeout expires."
+  },
+  {
+    "question": "The Domain Name System (DNS):",
+    "options": [
+      "a) allows to learn the physical (i.e., geographical) position of an Internet host",
+      "b) according to the OSI model provides a mapping between (3)-addresses and (2)-addresses",
+      "c) assigns to a host an Ethernet address according to its IP address",
+      "d) enables an application to find out the IP address of a website for which the logical name is"
+    ],
+    "answer": "d) enables an application to find out the IP address of a website for which the logical name is",
+    "explanation": "DNS is like a phone book for the internet, translating human-readable domain names into IP addresses."
+  },
+  {
+    "question": "What is the order of magnitude of the maximum transmission bit rate achievable in current WiFi networks?",
+    "options": [
+      "a) Tens of Tbits/s",
+      "b) A few Gbits/s",
+      "c) Some tens of Mbits/s",
+      "d) Hundreds of Gbits/s"
+    ],
+    "answer": "b) A few Gbits/s",
+    "explanation": "Current WiFi networks typically achieve transmission speeds in the range of several hundred Mbps to a few Gbps."
+  },
+  {
+    "question": "A DHCP server deployed in a local area network provides:",
+    "options": [
+      "a) An electronic mail service within the local area network, hence being able to forward email messages sent by clients within the network",
+      "b) An IP configuration to any IP host within the Internet which explicitly requests one, no need to request, done automatically",
+      "c) A name resolution service to hosts connected to the local area network",
+      "d) An IP configuration to hosts connected to the local area network"
+    ],
+    "answer": "d) An IP configuration to hosts connected to the local area network",
+    "explanation": "A DHCP server provides IP addresses and other network configuration parameters to devices in the local area network."
+  },
+  {
+    "question": "Which of these parameters is not provided by the DHCP server?",
+    "options": [
+      "a) Subnet mask",
+      "b) Dynamically assigned IP address",
+      "c) Default gateway address",
+      "d) Current value of Round Trip Time (RTT)"
+    ],
+    "answer": "d) Current value of Round Trip Time (RTT)",
+    "explanation": "The DHCP server does not provide RTT, which is a measure of round-trip time for packets. It only provides IP address, subnet mask, and gateway information."
+  },
+  {
+    "question": "A UTP (Unshielded Twisted Pair) cable and an optical fiber?",
+    "options": [
+      "a) can be both used in transoceanic links",
+      "b) can be both used in access networks",
+      "c) achieve comparable bit rates",
+      "d) are used in passive bus topologies"
+    ],
+    "answer": "b) can be both used in access networks",
+    "explanation": "UTP cables and optical fibers are both commonly used in access networks, with UTP for shorter distances and optical fiber for longer distances and higher speeds."
+  }
+
+
           
       
 
