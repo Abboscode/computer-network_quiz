@@ -540,7 +540,363 @@ const questions = [{
     ],
     "answer": "b) can be both used in access networks",
     "explanation": "UTP cables and optical fibers are both commonly used in access networks, with UTP for shorter distances and optical fiber for longer distances and higher speeds."
+  },
+    
+  {
+    "question": "To avoid ambiguities in the interpretation of the semantics of cumulative ACKs, the window size of a transmitter using a Go-Back-N protocol with 4-bit long sequence numbers must be:",
+    "options": [
+      "a) smaller or equal to 16",
+      "b) greater than 16",
+      "c) equal to 16",
+      "d) strictly smaller than 16"
+    ],
+    "answer": "d) strictly smaller than 16",
+    "explanation": "The sequence number space is determined by the number of bits available (4 bits = 16 sequence numbers). To avoid ambiguities in cumulative ACK interpretation, the window size must be strictly less than 16."
+  },
+  {
+    "question": "Consider a LAN adopting the Ethernet technology, where hosts are interconnected by switches. Which of the following claims is false?",
+    "options": [
+      "a) The switches introduce additional delays in the transmissions among the hosts belonging to different portions of the network that they interconnect",
+      "b) The switches can support the creation of virtual LANs (VLANs)",
+      "c) It is necessary to modify the configuration of the hosts connected to the LAN to ensure correct forwarding of MAC frames among the switches",
+      "d) The switches separate collision domains of the portions of the network that they interconnect"
+    ],
+    "answer": "c) It is necessary to modify the configuration of the hosts connected to the LAN to ensure correct forwarding of MAC frames among the switches",
+    "explanation": "Switches separate collision domains but do not require changes to host configurations for correct forwarding of MAC frames among them."
+  },
+  {
+    "question": "Which of these statements about DASH is false?",
+    "options": [
+      "a) Is used for streaming multimedia content over HTTP",
+      "b) Is based on the availability of different versions of the same multimedia content encoded at different bit rates",
+      "c) Realizes a compromise between available network bandwidth and quality of multimedia content",
+      "d) Produces messages that are encapsulated in RTP to implement Internet telephony"
+    ],
+    "answer": "d) Produces messages that are encapsulated in RTP to implement Internet telephony",
+    "explanation": "DASH uses fragmented MP4 (fMP4) containers for multimedia streaming over HTTP, not RTP. It does not encapsulate messages in RTP."
+  },
+  {
+    "question": "Which of the following protocols does not perform delimitation functions of the data units?",
+    "options": [
+      "A) LaPB (Link access Procedure Balanced), used in the ISDN B channel",
+      "B) LaPF (Link access Producer to Frame-mode bearer services), used in Frame Relay networks",
+      "C) PPP (Point-to-Point Protocol), used in domestic Internet access",
+      "D) IEEE 802.2 LLC (Logical Link Control), used in local networks"
+    ],
+    "answer": "D) IEEE 802.2 LLC (Logical Link Control), used in local networks",
+    "explanation": "IEEE 802.2 LLC does not perform delimitation of data units; this is done by the MAC layer in the data link layer."
+  },
+  {
+    "question": "In Store-And-Forward packet-switched networks, the use of PDUs (packets) of big dimensions:",
+    "options": [
+      "A) It decreases the probability of losing information by mistake on the bits received",
+      "B) Minimize the transfer delay because, as there is less overhead due to the control present in each PDU, the total amount of information to be sent is less",
+      "C) It requires a larger header to allow the management of all the information contained in the PDU",
+      "D) The overall information transfer delay increases because each node must receive the entire PDU before it can be sent on the next channel"
+    ],
+    "answer": "D) The overall information transfer delay increases because each node must receive the entire PDU before it can be sent on the next channel",
+    "explanation": "Large packets increase transfer delays because Store-And-Forward nodes must receive the entire packet before forwarding it."
+  },
+  {
+    "question": "Which of the following features are possible thanks to Store-And-Forward operation in a packet network?",
+    "options": [
+      "A) The possibility of having different transmission speeds between the different channels attested to the same switch.",
+      "B) The reduction of information transfer delays through a switching node.",
+      "C) The reduction in the size of packet headers.",
+      "D) The possibility of using Forward Error Correction channel encodings"
+    ],
+    "answer": "A) The possibility of having different transmission speeds between the different channels attested to the same switch.",
+    "explanation": "Store-And-Forward allows different transmission speeds between channels, enabling the adaptation of the network to various link capacities."
+  },
+  {
+    "question": "The Domain Name System (DNS):",
+    "options": [
+      "A) Allows you to assign an Ethernet address to a host based on its IP address",
+      "B) Realizes in OSI terms a mapping function between (3)-addresses and (2)-addresses",
+      "C) Allows an application to know the IP address of a website whose logical name is known",
+      "D) Lets you know the physical location of an Internet host"
+    ],
+    "answer": "C) Allows an application to know the IP address of a website whose logical name is known",
+    "explanation": "DNS maps domain names (logical names) to IP addresses and does not provide physical location information of hosts."
+  }, {
+    "question": "The piggybacking technique in window protocols consists of the possibility of:",
+    "options": [
+      "A) Return any data units that have suffered transmission errors to the transmitter",
+      "B) Concatenate multiple hits in a data unit",
+      "C) Carrying feedback information and user data in the same data unit",
+      "D) Have the receiver explicitly report any loss of data units to the transmitter"
+    ],
+    "answer": "C) Carrying feedback information and user data in the same data unit",
+    "explanation": "Piggybacking allows acknowledgment information (ACK) to be included in the header of a PDU traveling in the opposite direction, reducing the need for separate ACK messages."
+  },
+  {
+    "question": "An Ethernet card in a switch processes (that is, it reads and decides whether and how to route):",
+    "options": [
+      "A) Only packets with broadcast destination MAC address",
+      "B) All packets, regardless of the destination address",
+      "C) Only packets with unicast destination MAC address equal to that of the switch",
+      "D) Only packets with multicast destination MAC address"
+    ],
+    "answer": "B) All packets, regardless of the destination address",
+    "explanation": "Switches process all packets and make forwarding decisions based on the destination MAC address in the frame."
+  },
+  {
+    "question": "The IP protocol:",
+    "options": [
+      "A) Guarantees error detection only on the datagram header",
+      "B) Guarantees error detection on the header and the content of the datagram",
+      "C) It does not provide any kind of error protection",
+      "D) Guarantees error detection only on the content of the datagram"
+    ],
+    "answer": "A) Guarantees error detection only on the datagram header",
+    "explanation": "The IP protocol uses a header checksum to detect errors in the header but does not provide error detection for the content of the datagram."
+  },
+  {
+    "question": "In a fully connected mesh topology with N nodes, the number of bidirectional channels is equal to:",
+    "options": [
+      "A) N (N-1) / 2",
+      "B) 2N",
+      "C) N-1",
+      "D) No"
+    ],
+    "answer": "A) N (N-1) / 2",
+    "explanation": "In a fully connected mesh topology, each pair of nodes is connected, and the number of bidirectional channels is given by the combination formula."
+  },
+  {
+    "question": "The DSL access network separates data and voice on the same transmission medium between the user and control panel devices using:",
+    "options": [
+      "A) Time multiplexing",
+      "B) Multiple access to frequency division",
+      "C) Multiple access to time division",
+      "D) Frequency multiplexing"
+    ],
+    "answer": "D) Frequency multiplexing",
+    "explanation": "DSL uses frequency multiplexing to separate voice and data channels, using filters to ensure they don't interfere with each other."
+  },
+  {
+    "question": "The Stop-And-Wait protocol:",
+    "options": [
+      "A) It can only work using more than one numbering bit",
+      "B) It can work using a number of numbering bits greater than or equal to 1",
+      "C) It can only work in using a single numbering bit",
+      "D) It can only work using fewer numbering bits than the window size transmission"
+    ],
+    "answer": "B) It can work using a number of numbering bits greater than or equal to 1",
+    "explanation": "The Stop-And-Wait protocol can function with a single bit for numbering but is more reliable with a greater number of bits."
+  },
+  {
+    "question": "In a tree topology with N nodes, the number of bidirectional channels is equal to:",
+    "options": [
+      "A) N",
+      "B) N-1",
+      "C) 2N",
+      "D) N (N-1) / 2"
+    ],
+    "answer": "B) N-1",
+    "explanation": "In a tree topology, there are N-1 bidirectional channels, as each node (except the root) is connected by one link."
+  },
+  {
+    "question": "The transport layer on the Internet:",
+    "options": [
+      "A) Provides reliable information transport if UDP protocol is used",
+      "B) It only provides unreliable transportation",
+      "C) Always provides reliable information transport",
+      "D) Provides reliable information transport if using the TCP protocol"
+    ],
+    "answer": "D) Provides reliable information transport if using the TCP protocol",
+    "explanation": "The transport layer provides reliable transport with TCP and unreliable transport with UDP."
+  },
+  {
+    "question": "The SMTP protocol:",
+    "options": [
+      "A) It operates on the UDP protocol, as emails are usually short",
+      "B) It is based on messages that always include encrypted authentication",
+      "C) It is used for the delivery of outgoing e-mail messages from a client to a given server",
+      "D) It is used to transfer e-mail messages from a server to a client installed on a PC"
+    ],
+    "answer": "C) It is used for the delivery of outgoing e-mail messages from a client to a given server",
+    "explanation": "SMTP is used for sending emails from a client to a server, not for receiving messages from a server."
+  },
+  {
+    "question": "Which of these statements about VoIP is false?",
+    "options": [
+      "A) RTP can be used for audio-video data transfer",
+      "B) RTP provides mechanisms to ensure the delivery of data in real time",
+      "C) SiP can be used to initiate and close a session",
+      "D) SiP provides mechanisms to determine the address of the callee"
+    ],
+    "answer": "D) SiP provides mechanisms to determine the address of the callee",
+    "explanation": "SIP is used to establish, maintain, and terminate communication sessions, but it does not directly provide mechanisms for determining the callee's address."
+  },
+  {
+    "question": "The IP protocol:",
+    "options": [
+      "a) Implements the transport layer of the internet network",
+      "b) Makes large networks more scalable thanks to address aggregation",
+      "c) It is not used in local networks as the ethernet technology is adequate",
+      "d) Provides the mechanisms for accessing a shared medium"
+    ],
+    "answer": "b) Makes large networks more scalable thanks to address aggregation",
+    "explanation": "The IP protocol is responsible for routing packets across networks, and address aggregation helps make large networks more scalable."
+  },
+  {
+    "question": "A link state routing algorithm provides that:",
+    "options": [
+      "a) Each node of the network communicates the information on the cost of transmission to all the nodes of the network towards the nodes adjacent to it",
+      "b) Each node in the network generates its own routing tables and then distributes them to the nodes only adjacent",
+      "c) Each node in the network communicates information on cost and direction to the nodes adjacent to it of the roads that lead to every possible destination",
+      "d) Each node on the network generates its own routing tables and then distributes them to everyone else network nodes"
+    ],
+    "answer": "c) Each node in the network communicates information on cost and direction to the nodes adjacent to it of the roads that lead to every possible destination",
+    "explanation": "A link state algorithm involves each node sending information about the cost and direction to all other nodes."
+  },
+  {
+    "question": "The MIME protocol allows:",
+    "options": [
+      "A) To have data encoded differently within the email message",
+      "B) To reserve online resources so that an email message with a multimedia file attachment can reach its destination with guaranteed quality",
+      "C) To transmit useful information to the recipients of the email to monitor the quality of the transmission",
+      "D) Control playback of a media file downloaded from the network"
+    ],
+    "answer": "A) To have data encoded differently within the email message",
+    "explanation": "MIME allows different types of data to be encoded in a format that can be transferred via email."
+  },
+  {
+    "question": "Which line encoding requires a higher bitrate on the physical medium?",
+    "options": [
+      "A) 4B5B",
+      "B) Manchester",
+      "C) NRZ",
+      "D) Unipolar"
+    ],
+    "answer": "B) Manchester",
+    "explanation": "Manchester encoding uses more bandwidth because it encodes both data and clock signals, requiring a higher bitrate."
+  },
+  {
+    "question": "Which of the following statements is false?",
+    "options": [
+      "A) An IP router can use ARP (Address Resolution Protocol) to know the MAC address of the router or host to which it must deliver an IP packet",
+      "B) A host can use ICMP messages to verify another host's connectivity to the Internet",
+      "C) An IP router, which does not perform a NAT (Network Address Translator) function, does not modify the IP addresses of the packets it must retransmit",
+      "D) An IP host always only makes direct deliveries"
+    ],
+    "answer": "D) An IP host always only makes direct deliveries",
+    "explanation": "An IP host may need to route packets through an intermediary device, so it doesn't always make direct deliveries."
+  },
+  {
+    "question": "The transport layer in the Internet:",
+    "options": [
+      "A) Always provides reliable transport of information",
+      "B) Just provides unreliable transportation",
+      "C) Provides reliable information transport if the UDP protocol is used",
+      "D) Provides reliable transport of information if the TCP protocol is used"
+    ],
+    "answer": "D) Provides reliable transport of information if the TCP protocol is used",
+    "explanation": "TCP provides reliable transport by ensuring data integrity and order, while UDP does not."
+  },
+  {
+    "question": "The TCP protocol:",
+    "options": [
+      "A) Assigns a sequence number only to acknowledgments (ACKs)",
+      "B) Does not assign a sequence number to either segments or acknowledgments (ACKs)",
+      "C) Assigns a sequence number to each segment and each acknowledgment (ACK)",
+      "D) Assigns a sequence number only to each segment"
+    ],
+    "answer": "C) Assigns a sequence number to each segment and each acknowledgment (ACK)",
+    "explanation": "TCP assigns a sequence number to both data segments and acknowledgments to ensure reliable communication."
+  },
+  {
+    "question": "In a tree topology with N nodes, the number of bidirectional channels is equal to:",
+    "options": [
+      "A) N",
+      "B) N-1",
+      "C) 2N",
+      "D) N(N-1)/2"
+    ],
+    "answer": "B) N-1",
+    "explanation": "In a tree topology, the number of bidirectional channels is equal to N-1, where N is the number of nodes."
+  },
+  {
+    "question": "An Ethernet card in a switch processes (i.e. reads and decides whether and how to route):",
+    "options": [
+      "A) Only packets with a broadcast destination MAC address",
+      "B) Only packets with multicast destination MAC address",
+      "C) All packets, regardless of the destination address",
+      "D) Only packets with a unicast destination MAC address equal to that of the switch"
+    ],
+    "answer": "C) All packets, regardless of the destination address",
+    "explanation": "An Ethernet card processes all packets, regardless of whether they are broadcast, multicast, or unicast."
+  },
+  {
+    "question": "The minimum time necessary to send a 100 Kbyte packet between two stations separated by 300 meters, using a wired network with UTP (Unshielded Twisted Pair) cables and operating at 10Mbit/s, and crossing 3 interconnection devices operating in store-and-forward mode is of the order of:",
+    "options": [
+      "A) Tens of milliseconds",
+      "B) Hundreds of milliseconds",
+      "C) A few microseconds",
+      "D) A few seconds"
+    ],
+    "answer": "A) Tens of milliseconds",
+    "explanation": "Considering the propagation delay, transmission rate, and store-and-forward delays, the total time is in the order of tens of milliseconds."
+  },
+  {
+    "question": "Transmission Control Protocol (TCP) congestion control is based on:",
+    "options": [
+      "A) On the dynamics of the transmitter window size",
+      "B) On adapting the size of the transmitted segments to the state of the network",
+      "C) On adapting the transmitter window to the available memory of the receiver",
+      "D) On the variation in the number of parity bits inserted in the transmitted segments"
+    ],
+    "answer": "B) On adapting the size of the transmitted segments to the state of the network",
+    "explanation": "TCP congestion control dynamically adjusts the segment size based on the current network conditions to avoid congestion."
+  },
+  {
+    "question": "In the case in which a window protocol is used on a channel that does not allow inversions in the sequential order of the transmitted data units (i.e. on a sequential channel), assuming that a progressive non-cyclic numbering is used, the transmission and reception windows can never find yourself in the following situation:",
+    "options": [
+      "A) No sequence number included in the receive window and also included in the transmit window",
+      "B) The smallest sequence number in the transmit window is smaller than the smallest sequence number in the receive window",
+      "C) The smallest sequence number in the receive window is larger than the smallest sequence number in the transmit window",
+      "D) The smallest sequence number in the receive window is smaller than the smallest sequence number in the transmit window"
+    ],
+    "answer": "A) No sequence number included in the receive window and also included in the transmit window",
+    "explanation": "In a window protocol with sequential data numbering, the smallest sequence number in the transmit window will always be larger than or equal to the smallest sequence number in the receive window."
+  },
+  {
+    "question": "Common channel signaling requires that:",
+    "options": [
+      "A) The information of multiple users is transmitted with different signals on the same transmission channel",
+      "B) Each channel dedicated to the transmission of user data is associated with a different reporting channel",
+      "C) The control devices of the switching exchanges, exchange signaling information in packet switching",
+      "D) The signaling between the switching exchanges occurs by sharing a single channel via satellite"
+    ],
+    "answer": "D) The signaling between the switching exchanges occurs by sharing a single channel via satellite",
+    "explanation": "Common channel signaling uses a single channel to carry signaling information between switching exchanges, often implemented via packet switching."
+  },
+  {
+    "question": "The DSL access network separates data and voice on the same transmission medium between user equipment and exchange equipment using:",
+    "options": [
+      "A) Time multiplexing",
+      "B) Frequency multiplexing",
+      "C) Frequency division multiple access",
+      "D) Time division multiple access"
+    ],
+    "answer": "B) Frequency multiplexing",
+    "explanation": "DSL uses frequency division multiplexing (FDM) to separate voice and data signals on the same medium."
+  },
+  {
+    "question": "The use of cookies in the HTTP protocol allows:",
+    "options": [
+      "A) Only a more efficient management of the exchange of data between client and server",
+      "B) To remember the state of the session between two successive requests by the same client",
+      "C) To avoid client authentication at each request to the server",
+      "D) To guarantee that the state of a connection remains constant in time"
+    ],
+    "answer": "B) To remember the state of the session between two successive requests by the same client",
+    "explanation": "Cookies are used in HTTP to maintain state information between requests from the same client."
   }
+
+
+
+
 
 
           
