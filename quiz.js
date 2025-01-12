@@ -1002,6 +1002,311 @@ const questions = [{
     ],
     "answer": "D) typical of the layer or sublayer adjacent to the physical layer",
     "explanation": "Frame delineation is typically handled by the data link layer, which ensures proper framing of the data."
+  },{
+    "question": "At the current state of technology, it is possible to transmit information without amplification along the transmission route over longer distances using:",
+    "options": [
+      "A) telephone twisted pairs",
+      "B) optical fibers",
+      "C) coaxial cables",
+      "D) the Hertzian channel (satellite, radio)"
+    ],
+    "answer": "B) optical fibers",
+    "explanation": "Optical fibers are used for long-distance transmission without amplification, as they use light signals which suffer minimal loss."
+  },
+  {
+    "question": "The purpose of the MIME protocol is to:",
+    "options": [
+      "A) Reserve resources on the network so that an email message with a multimedia file attachment can reach the recipient",
+      "B) Allow you to have data encoded differently within the email message.",
+      "C) Transmit useful information to email recipients to monitor transmission.",
+      "D) Control playback of a media file downloaded from the network."
+    ],
+    "answer": "B) Allow you to have data encoded differently within the email message.",
+    "explanation": "MIME allows the encoding of multimedia files in different formats within email messages, allowing for proper handling and decoding at the recipient's end."
+  },
+  {
+    "question": "Which of the following statements about ADSL (Asymmetric Digital Subscriber Loop) technology is true?",
+    "options": [
+      "A) ADSL allows a bidirectional analog telephone channel to be multiplexed in frequency division with two unidirectional data channels on the user twisted pair",
+      "B) ADSL requires a coaxial cable as the transmission medium",
+      "C) ADSL allows time division multiplexing of up to 30 telephone calls in numeric format at 64 kbit/s on the user's twisted pair",
+      "D) ADSL allows much higher transmission speeds than those obtainable on an analogue telephone channel even using the same modems"
+    ],
+    "answer": "D) ADSL allows much higher transmission speeds than those obtainable on an analogue telephone channel even using the same modems",
+    "explanation": "ADSL uses existing telephone lines to deliver higher-speed internet access compared to traditional analog phone lines."
+  },
+  {
+    "question": "Let WT > 1 and WR > 1 be the dimensions, respectively, of the transmission window and the reception window in a window protocol. Also, let N be the total amount of sequence numbers available to distinguish data units. Which of the following constraints is a necessary and sufficient condition to avoid malfunctions on a channel that does not reverse the order of the data units?",
+    "options": [
+      "A) N = (WT + WR)/2",
+      "B) N >= WT + WR",
+      "C) N = WR + 1",
+      "D) N = WT + 1"
+    ],
+    "answer": "B) N >= WT + WR",
+    "explanation": "For proper functioning of a window protocol, the total sequence numbers must be greater than or equal to the sum of transmission and reception windows."
+  },
+  {
+    "question": "The MIME protocol allows:",
+    "options": [
+      "A) Control playback of a media file downloaded from the network",
+      "B) To reserve online resources so that an email message with a multimedia file attachment can reach its destination with guaranteed quality",
+      "C) To have data encoded differently within the email message",
+      "D) To transmit useful information to the recipients of the email to monitor the quality of the transmission"
+    ],
+    "answer": "C) To have data encoded differently within the email message",
+    "explanation": "MIME facilitates encoding of various media types in email messages for proper handling by the recipient's email client."
+  },
+  {
+    "question": "The Domain Name System (DNS):",
+    "options": [
+      "A) allows you to know the physical location of an Internet host",
+      "B) allows an application to know the IP address of a website whose logical name is known",
+      "C) allows you to assign an Ethernet address to a host based on its IP address",
+      "D) implements in OSI terms a mapping function between (3)-addresses and (2)-addresses"
+    ],
+    "answer": "B) allows an application to know the IP address of a website whose logical name is known",
+    "explanation": "DNS translates human-readable domain names into IP addresses, enabling applications to locate servers on the internet."
+  },
+  {
+    "question": "An (N-1)-protocol allows interaction:",
+    "options": [
+      "A) between two (N)-entities",
+      "B) between any two entities, regardless of the level, as long as they belong to different systems",
+      "C) between two (N-1)-entities",
+      "D) between an (N+1)-entity and an (N-1)-entity"
+    ],
+    "answer": "C) between two (N-1)-entities",
+    "explanation": "An (N-1)-protocol facilitates communication between entities of the (N-1) level in a given system."
+  },
+  {
+    "question": "The SMTP protocol:",
+    "options": [
+      "A) It is used for the delivery of outgoing emails from a client to a given server.",
+      "B) It is used to transfer emails from a server to an email client installed on a PC.",
+      "C) It is based on messages that always include encrypted authentication.",
+      "D) It operates on UDP as emails are usually short messages."
+    ],
+    "answer": "A) It is used for the delivery of outgoing emails from a client to a given server.",
+    "explanation": "SMTP is used to send outgoing emails from an email client to the server."
+  },
+  {
+    "question": "In a fully connected mesh topology with N nodes, the number of bidirectional channels is equal to:",
+    "options": [
+      "A) N(N-1)/2",
+      "B) 2N",
+      "C) N-1",
+      "D) No"
+    ],
+    "answer": "A) N(N-1)/2",
+    "explanation": "In a fully connected mesh topology, every pair of nodes is connected, and the number of bidirectional channels is calculated as N(N-1)/2."
+  },
+  {
+    "question": "Which of the following protocols does not perform error detection functions on data frames?",
+    "options": [
+      "A) PPP (Point-to-Point Protocol)",
+      "B) LAPF (Link Access Procedure to Frame-mode bearer services)",
+      "C) IEEE 802.2 LLC (Logical Link Control)",
+      "D) LAPB (Link Access Procedure Balanced)"
+    ],
+    "answer": "A) PPP (Point-to-Point Protocol)",
+    "explanation": "PPP is a protocol for direct connections between two nodes but does not include error detection on data frames."
+  },
+  {
+    "question": "An Ethernet card in a bridge processes (i.e. reads and decides whether and how to route):",
+    "options": [
+      "A) all packets, regardless of the destination address",
+      "B) only packets with a unicast destination MAC address equal to that of the bridge",
+      "C) only packets with a broadcast destination MAC address",
+      "D) only packets with multicast destination MAC address"
+    ],
+    "answer": "A) all packets, regardless of the destination address",
+    "explanation": "A bridge processes all incoming packets and makes forwarding decisions based on the destination MAC address."
+  },
+  {
+    "question": "If a router receives a correct TCP packet, encapsulated in an IP packet header consigned to a non-existent TCP port (for which there is no application process waiting):",
+    "options": [
+      "A) It discards it and sends an ICMP packet to the destination",
+      "B) it passes it to a default application process that handles all TCP packets",
+      "C) discards and sends an ICMP packet to the source",
+      "D) Ignores the TCP port value and forwards the packet"
+    ],
+    "answer": "C) discards and sends an ICMP packet to the source",
+    "explanation": "If a TCP packet is sent to a non-existent port, the router discards it and sends an ICMP 'port unreachable' message to the source."
+  },
+  {
+    "question": "In a real mobile radio channel, the fading phenomenon consists of:",
+    "options": [
+      "A) rapid variation in the power received, caused by the presence of moving obstacles",
+      "B) decrease in power received, caused by atmospheric phenomena such as rain and snow",
+      "C) rapid variation in received power, caused by sources operating at the same frequency",
+      "D) decrease in received power, caused by the distance between transmitter and receiver"
+    ],
+    "answer": "A) rapid variation in the power received, caused by the presence of moving obstacles",
+    "explanation": "Fading refers to variations in received signal power due to obstacles and multipath propagation in mobile radio channels."
+  },{
+    "question": "Which of the following functions is not performed by the Transmission Control Protocol (TCP)?",
+    "options": [
+      "A) Congestion control",
+      "B) Multiplexing/demultiplexing through the door mechanism",
+      "C) Flow control",
+      "D) Choice of packet routing"
+    ],
+    "answer": "D) Choice of packet routing",
+    "explanation": "TCP manages functions like congestion control, flow control, and data multiplexing/demultiplexing, but it leaves packet routing to the network layer."
+  },
+  {
+    "question": "The ring topology with bidirectional channels is widely used in telecommunications networks because:",
+    "options": [
+      "A) to minimize the number of input and output ports in the switching nodes.",
+      "B) for the great commercial success of local networks based on physical ring topology.",
+      "C) because it is the topology in which the distance between the different stations, measured as the number of channels crossed, is minimum.",
+      "D) because it is the simplest topology that allows maintaining connectivity between all network nodes even in the presence of the malfunction of a transmission channel"
+    ],
+    "answer": "D) because it is the simplest topology that allows maintaining connectivity between all network nodes even in the presence of the malfunction of a transmission channel"
+  },
+  {
+    "question": "If a router detects a bad checksum on an IP packet, and therefore a potential IP address error, it:",
+    "options": [
+      "A) discards it and sends an ICMP packet to the source only",
+      "B) It forwards it to the destination anyway, but sends an ICMP packet to the source to report the error",
+      "C) discards it and sends an ICMP packet to both the source and the destination",
+      "D) discards it without reporting it to any other network entity"
+    ],
+    "answer": "D) discards it without reporting it to any other network entity",
+    "explanation": "This is because the bad checksum indicates that the packet is not reliable, and forwarding it or sending ICMP packets based on unreliable data could potentially cause further issues in the network."
+  },
+  {
+    "question": "The DNS (Domain Name Service):",
+    "options": [
+      "A) to increase the reliability and response speed of the system it uses a set of caches, but each resolution must always reach the authoritative server for the domain to which the name belongs",
+      "B) is used by operators to sell domain names to their customers who need to create public servers",
+      "C) is based on a system of hierarchical servers, each responsible for the naming of a particular area",
+      "D) represents a protocol for distributing the load across multiple routers within the local network"
+    ],
+    "answer": "C) is based on a system of hierarchical servers, each responsible for the naming of a particular area"
+  },
+  {
+    "question": "A window protocol with Wt=4 Wr=4 uses 3 bits to number the PDUs, starting with sequence number 0. After using it, the network operator realizes it does not work correctly, especially when there are retransmissions. Which of the following changes could be adopted to solve the issues?",
+    "options": [
+      "a) Start with sequence number 1",
+      "b) Use WR=3",
+      "c) Use WT=5",
+      "d) Use 2 bits to number the PDUs"
+    ],
+    "answer": "d) Use 2 bits to number the PDUs"
+  },
+  {
+    "question": "Which of the following is an example of client/server?",
+    "options": [
+      "a) E mail",
+      "b) Hard drive utilities",
+      "c) A Torrent file sharing application",
+      "d) A local sprondßhoot application"
+    ],
+    "answer": "a) E mail"
+  },
+  {
+    "question": "UDP segments use what protocols to provide reliability?",
+    "options": [
+      "a) Application layer protocols",
+      "b) The DASH protocol",
+      "c) The HTTPS protocol",
+      "d) Network layer protocols"
+    ],
+    "answer": "a) Application layer protocols",
+    "explanation": "Highest layer can possibly provide protocols that add reliability"
+  },
+  {
+    "question": "The TCP header, i.e., the TCP PCI, mandatorily contains:",
+    "options": [
+      "a) the current value of the congestion window",
+      "b) some flags used for connection setup and teardown",
+      "c) the header checksum field, for an error detection on the header only",
+      "d) the value of the Maximum Segment Size negotiated between sender and receiver"
+    ],
+    "answer": "b) some flags used for connection setup and teardown"
+  },
+  {
+    "question": "The optical residential access infrastructure FTTx includes:",
+    "options": [
+      "a) an optical passive distribution network and, optionally, a copper-based termination",
+      "b) an optical distribution network based on the IEEE 802.3 Gigabit Ethernet technology",
+      "c) always only an active optical distribution network",
+      "d) a copper-based passive distribution network and, optionally, an optical termination"
+    ],
+    "answer": "a) an optical passive distribution network and, optionally, a copper-based termination"
+  },
+  {
+    "question": "In a UTP Unshielded Twisted Pair cable, the signal transmission takes place by exploiting:",
+    "options": [
+      "a) the difference between the voltages of different pairs of conductors",
+      "b) the difference between the voltages on the components of a pair of conductors",
+      "c) the difference between the voltage of a single conductor and the metallic shield",
+      "d) the difference between the voltage of a single conductor and the 'ground'"
+    ],
+    "answer": "b) the difference between the voltages on the components of a pair of conductors"
+  },
+  {
+    "question": "What are the two parts of an IP address?",
+    "options": [
+      "a) HOST part and MAC address",
+      "b) Network part and host part",
+      "c) Network part and MAC address",
+      "d) MAC address and hostname"
+    ],
+    "answer": "b) Network part and host part"
+  },
+  {
+    "question": "The flow control in the TCP protocol:",
+    "options": [
+      "a) is based on an autonomous decision at the sender on the basis of missing segments due to congestion",
+      "b) works only in some cases",
+      "c) is based on some information included into the segments sent from the receiver to the sender",
+      "d) is obtained by means of the error control on the checksum field"
+    ],
+    "answer": "c) is based on some information included into the segments sent from the receiver to the sender"
+  },
+  {
+    "question": "In the CSMA/CA Collision Avoidance protocol, collisions can happen:",
+    "options": [
+      "a) can happen only if the stations don't execute the collision detection procedure",
+      "b) can happen only if the frames of one of the stations involved are shorter than the others",
+      "c) can happen if two stations start the transmission at the same time",
+      "d) never happen"
+    ],
+    "answer": "c) can happen if two stations start the transmission at the same time"
+  },
+  {
+    "question": "How many host addresses can be used in a /22 network prefix length 22?",
+    "options": [
+      "a) 4094",
+      "b) 1022",
+      "c) 1024",
+      "d) 1023"
+    ],
+    "answer": "b) 1022",
+    "explanation": "32 (bit) - 22 = 10, 2^10 - networkID - broadcast = 1022"
+  },
+  {
+    "question": "What portion of the classful Class B address 154.19.2.7 is the network part?",
+    "options": [
+      "a) 154",
+      "b) 154.19.2.7",
+      "c) 154.19",
+      "d) 154.19.2"
+    ],
+    "answer": "c) 154.19"
+  },
+  {
+    "question": "In a simple ALOHA network, in which all stations use frames with the same duration, a station sends a frame starting at t1=t0+1100ms and finishing at t2=t0+1300ms. Which of the following times, corresponding to the start of the transmission by another station, determines a collision?",
+    "options": [
+      "a) to+910ms",
+      "b) to+1370ms",
+      "c) to +1310ms",
+      "d) to+890ms"
+    ],
+    "answer": "b) to+1370ms"
   }
 
 
