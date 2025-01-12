@@ -892,7 +892,119 @@ const questions = [{
     ],
     "answer": "B) To remember the state of the session between two successive requests by the same client",
     "explanation": "Cookies are used in HTTP to maintain state information between requests from the same client."
+  },
+  {
+    "question": "What is the order of magnitude of the maximum transmission speed on an optical fiber?",
+    "options": [
+      "A) 1 Tbit/s",
+      "B) 1 Mbit/s",
+      "C) 1 bit/s",
+      "D) 1 kbit/s"
+    ],
+    "answer": "A) 1 Tbit/s",
+    "explanation": "Optical fibers can achieve transmission speeds in the terabit per second range."
+  },
+  {
+    "question": "The POP3 protocol",
+    "options": [
+      "A) It can be used to transfer emails from a server to an email client installed on a PC.",
+      "B) It is based on messages that always include encrypted authentication.",
+      "C) It is used for exchanging emails between different mail servers.",
+      "D) It is used for blocking Pop-ups in a web browser."
+    ],
+    "answer": "A) It can be used to transfer emails from a server to an email client installed on a PC.",
+    "explanation": "Post Office Protocol version 3 (POP3) is used to retrieve emails from a server to a local client."
+  },
+  {
+    "question": "In the OSI model, segmentation performed by a level entity (N+1)",
+    "options": [
+      "A) creates many (N+1)-PDUs starting from a single (N+1)-SDU",
+      "B) creates a (N+1)-PDU ​from many (N)-SDUs",
+      "C) combines many (N+1)-PDUs into a single (N)-SDU",
+      "D) create many (N+1)-PCIs for the same (N+1)-PDU"
+    ],
+    "answer": "B) creates a (N+1)-PDU ​from many (N)-SDUs",
+    "explanation": "Segmentation refers to breaking up data from a higher layer (N) into smaller units suitable for transmission at the lower layer (N+1)."
+  },
+  {
+    "question": "Statistical multiplexing",
+    "options": [
+      "A) it is used in telephone networks because it is closely associated with the use of constant speed channels.",
+      "B) it can only be used in connectionless networks.",
+      "C) consists of the sharing of the same resource (transmission channel, memory device, etc.) by sources",
+      "D) it can only be used in connection-oriented networks, but not circuit-switched ones."
+    ],
+    "answer": "C) consists of the sharing of the same resource (transmission channel, memory device, etc.) by sources",
+    "explanation": "Statistical multiplexing allows multiple data sources to share a common transmission medium, regardless of whether the network is connection-oriented."
+  },
+  {
+    "question": "Compared to the 10 Mbit/s Ethernet standard, in the definition of 100 Mbit/s Ethernet, the MAC protocol",
+    "options": [
+      "A) has been modified to allow for more efficient collision detection",
+      "B) has been kept unchanged, accepting the reduction of the maximum size of the collision domain by a factor of ten (approximately).",
+      "C) was kept unchanged, keeping the maximum size of the collision domain unchanged, but increasing the minimum size of the frame by a factor of ten.",
+      "D) has been modified by introducing a collision avoidance mechanism, which improves performance and supports real-time services."
+    ],
+    "answer": "B) has been kept unchanged, accepting the reduction of the maximum size of the collision domain by a factor of ten (approximately).",
+    "explanation": "In 100 Mbit/s Ethernet, the MAC protocol remains the same, but the collision domain size is reduced significantly."
+  },
+  {
+    "question": "The DHCP protocol requires that",
+    "options": [
+      "A) A client can leave the network without notifying the server.",
+      "B) If a server exists, it must be unique in the client's local network.",
+      "C) A client uses an IP address as soon as it receives it from the server in a DHCP Offer message.",
+      "D) The server never distributes the IP address of a DNS server for use on the client."
+    ],
+    "answer": "B) If a server exists, it must be unique in the client's local network.",
+    "explanation": "The DHCP protocol requires a unique DHCP server within the client’s local network to avoid conflicts."
+  },
+  {
+    "question": "The Internet Protocol Architecture is Organized",
+    "options": [
+      "A) In seven levels",
+      "B) In four levels",
+      "C) In six levels",
+      "D) In a completely non-stratified way"
+    ],
+    "answer": "B) In four levels",
+    "explanation": "The Internet Protocol Architecture is typically organized into four layers: Link, Internet, Transport, and Application."
+  },
+  {
+    "question": "The SMTP protocol",
+    "options": [
+      "A) it is based on messages that always include cryptographic authentication",
+      "B) it is used for the delivery of outgoing email messages from a client to a given server",
+      "C) It operates on the UDP protocol, as email messages are usually short",
+      "D) it is used to transfer e-mail messages from a server to a client installed on a PC"
+    ],
+    "answer": "B) it is used for the delivery of outgoing email messages from a client to a given server",
+    "explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending email from a client to a server."
+  },
+  {
+    "question": "They are never contained in the TCP header, i.e. in the PCI of the TCP protocol",
+    "options": [
+      "A) the value of the cwnd, current size of the transmission window",
+      "B) some flags for opening and closing the connection",
+      "C) the window field, size of the receiver window, used for flow control",
+      "D) the checksum field, for detecting data and header errors"
+    ],
+    "answer": "A) the value of the cwnd, current size of the transmission window",
+    "explanation": "The cwnd (congestion window) is not included in the TCP header as it adds overhead; it's managed at a higher layer."
+  },
+  {
+    "question": "In the OSI model, frame delineation, i.e. the ability to identify the beginning and end of a packet on a channel, is a function",
+    "options": [
+      "A) performed by all OSI layers",
+      "B) exclusive to the network layer",
+      "C) exclusive to the transport sublevel",
+      "D) typical of the layer or sublayer adjacent to the physical layer"
+    ],
+    "answer": "D) typical of the layer or sublayer adjacent to the physical layer",
+    "explanation": "Frame delineation is typically handled by the data link layer, which ensures proper framing of the data."
   }
+
+
 
 
 
